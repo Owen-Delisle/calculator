@@ -17,6 +17,7 @@
 .display {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 
 	background-color: darkkhaki;
 	height: 15%;
