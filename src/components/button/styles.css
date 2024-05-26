@@ -1,5 +1,8 @@
 .calculator-button {
-	background-color: blue;
-	height: 70px;
-	width: 80px;
+	background-color: darkgray;
+	height: 15%;
+	width: 30%;
+	font-weight: bold;
+	font-size: large;
+	border-radius: 5%;
 }

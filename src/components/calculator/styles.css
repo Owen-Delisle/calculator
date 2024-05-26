@@ -1,7 +1,7 @@
 .calculator-container {
-	background-color: red;
-	height: 500px;
-	width: 300px;
+	background-color: lightgray;
+	height: 750px;
+	width: 500px;
 	display: flex;
 	flex-direction: column;
 }
@@ -11,4 +11,16 @@
 	flex-wrap: wrap;
     justify-content: space-evenly;
 	height: 100%;
+	padding: 5%;
+}
+
+.display {
+	display: flex;
+	align-items: center;
+
+	background-color: darkkhaki;
+	height: 15%;
+	font-weight: bold;
+	font-size: larger;
+	padding: 5%;
 }

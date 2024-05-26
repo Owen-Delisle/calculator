@@ -32,19 +32,15 @@ const Calculator = () => {
         <div className="result">{result !== null ? '=' + result : ''}</div>
       </div>
       <div className="button-container">
-        {['1', '2', '3', '+'].map((value) => (
+        {['0', '1', '2', '3', '5', '6', '7','8','9'].map((value) => (
           <Button key={value} value={value} onClick={handleClick} />
         ))}
-        {['4', '5', '6', '-'].map((value) => (
+        {['+', '-', '*', '/'].map((value) => (
           <Button key={value} value={value} onClick={handleClick} />
         ))}
-        {['7', '8', '9', '*'].map((value) => (
-          <Button key={value} value={value} onClick={handleClick} />
-        ))}
-        <Button value="C" onClick={handleClear} />
-        <Button value="0" onClick={handleClick} />
-        <Button value="=" onClick={handleEqual} />
-        <Button value="/" onClick={handleClick} />
+
+		    <Button value="C" onClick={handleClear} />
+		    <Button value="=" onClick={handleEqual} />
       </div>
     </div>
   );
