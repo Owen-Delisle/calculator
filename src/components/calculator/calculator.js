@@ -8,7 +8,12 @@ const Calculator = () => {
   const [result, setResult] = useState(null);
 
   const handleClick = (value) => {
-    setInput(input + value);
+    if(result != null) {
+      handleClear()
+      setInput(value)
+    } else {
+      setInput(input + value);
+    }
   };
 
   const handleClear = () => {
