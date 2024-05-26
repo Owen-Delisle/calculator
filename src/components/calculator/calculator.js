@@ -30,6 +30,9 @@ const Calculator = () => {
     }
   };
 
+  const numbers = ['0', '1', '2', '3', '5', '6', '7','8','9'];
+  const manipulators = ['+', '-', '*', '/'];
+
   return (
     <div className="calculator-container">
       <div className="display">
@@ -37,10 +40,10 @@ const Calculator = () => {
         <div className="result">{result !== null ? '=' + result : ''}</div>
       </div>
       <div className="button-container">
-        {['0', '1', '2', '3', '5', '6', '7','8','9'].map((value) => (
+        {numbers.map((value) => (
           <Button key={value} value={value} onClick={handleClick} />
         ))}
-        {['+', '-', '*', '/'].map((value) => (
+        {manipulators.map((value) => (
           <Button key={value} value={value} onClick={handleClick} />
         ))}
 
